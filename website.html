@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Websites</title>
+    <style>
+      body {
+        background-color: black;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+
+      img {
+        max-width: 70%;
+      }
+
+      h1 {
+        color: white;
+        font-size: 3vw;
+        text-align: center;
+      }
+
+      a:link{
+        margin-top: 5%;
+        font-size: 1vw;
+        background-color: rgb(0, 102, 255);
+        margin-right: 0.55vw;
+        width: 70%;
+        color: rgb(255, 255, 255);
+      }
+      a:visited{
+        font-size: 1vw;
+        color: rgb(0, 0, 0);
+      }
+      a:hover{
+        font-size: 1vw;
+        color: rgb(55, 0, 255);
+      }
+      a:active{
+        font-size: 1vw;
+        color: rgb(255, 0, 0);
+      }
+      .headerstyle {
+        color: white;
+        font-size: 4vw;
+        min-height: 10vh;
+        background-color: rgb(0, 217, 255);
+        margin: 1vw 1vw 2vw 2vw;
+        display: flex;
+        flex-direction: row;
+      }
+
+      /* Create styling for header */
+      .Money {
+        font-size: 5vw;
+        font-family: Arial, Helvetica, sans-serif;
+        color: white;
+        margin: auto;
+      }
+
+      /* Article Styling */
+      .article101 {
+        color: white;
+        font-size: 1vw;
+        font-family: cursive;
+        margin-left: 40vw;
+      }
+
+      .headerImageColumn {
+        display: flex;
+        flex-direction: column;
+        gap: 1vw;
+        margin-top: 1vh;
+      }
+
+      .nestedBox {
+        background-color: rgb(0, 102, 255);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        text-align: center;
+        margin-top: 1vh;
+        font-size: 1vw;
+        margin-bottom: 1vh;
+        width: 45vw;
+        border-radius: 20vw;
+      }
+
+      /* For links */
+      .linksStyling {
+        display: flex;
+        flex-direction: column;
+        font-family: Arial, Helvetica, sans-serif;
+        color: black;
+        margin-left: 23vw;
+        gap: 1vh;
+
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+        <header class="headerstyle">
+            <h5 style="margin-right: 10px; font-size: 1vw; margin-left: 1vw;">Plasma Enterprises @Inc</h5>
+            <h3>
+                <img src="Assets\megatron.jpg" width="200vw"></h3>
+            <div class="headerImageColumn">
+            <img src="Assets\Grokking.jpg" width="50vw" height="50vh" style="margin-left: 2vw;">
+            <img src="Assets\Grok wow.jpg" width="50vw" height="50vh" style="margin-left: 2vw;">
+            </div>
+            <!-- Elements to the right of two images -->
+            <div class="nestedBox">
+                <h2>Mission Statement: Providing the Greatest Tech in the Universe</h2>
+                <img src="Assets\grok type 4.jpg" style="max-width: 20vw; max-height: 10vh;">
+                <p>"Offering technology and services for the energy sectors worldwide"</p>
+            </div>
+            <div class="linksStyling">
+                <a href="https://www.google.com">Home</a>
+                <a href="https://www.yahoo.com">About</a>
+                <a href="https://www.x.com">Contact Us</a>
+                <a href="https://www.youtube.com">Employment Opportunities</a>
+            </div>
+
+            </header>
+        </header>
+    </div>
+    <!-- End of Header Styling -->
+     <h1>Welcome to Plasma Enterprise Inc</h1>
+    <div class="Money">
+      <img src="Assets\Grok 3.jpg" style="margin-left: 10vw" />
+    </div>
+    <div class="article101">
+      <article>
+        <h1 style="margin-left: 15vw">Actualizing Learnings</h1>
+        <section>
+          <h1>
+            With significant learning speeds you can actualize learning in half
+            the time
+          </h1>
+          <ul>
+            <li>Learn <strong>advanced</b> concepts</li>
+            <li>Apply those concepts</li>
+            <li>Make money</li>
+          </ul>
+        </section>
+        <section style="margin-left: -30vw">
+          Move this outside the flex box?
+          <ul>
+            <li>Now you can see how to stylize on the go!</li>
+            <li>You can even move outside the main design</li>
+            <li>With inline styling</li>
+          </ul>
+        </section>
+        <section>
+          The main theme is that I can nest elements within article and section
+          and create a beautifully designed and response web design
+        </section>
+      </article>
+      <img src="Assets\Grok design.jpg" />
+    </div>
+    <div>
+      <section style="color: whitesmoke; margin-top: 10vw; font-size: 5vw">
+        Since the advent of a.i., learning for humans has become alot more
+        efficient and faster
+      </section>
+      <img src="Assets\Grok part 2.jpg" style="width: 50%" />
+    </div>
+  </body>
+</html>

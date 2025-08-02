@@ -1,0 +1,183 @@
+/* Create styles for main  */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nabla&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nabla&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Matemasie&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nabla&display=swap");
+
+/* Design key elements */
+
+/* Type Scale */
+li,
+a,
+button {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #edf0f1;
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 10%;
+}
+
+.logo {
+  cursor: pointer;
+}
+
+.nav_links {
+  list-style: none;
+}
+
+.nav_links > li {
+  display: inline-block;
+  padding: 0 20px;
+}
+
+.nav_links > li a {
+  transition: all 0.3s ease 0s;
+}
+
+.nav_links > li a:hover {
+  color: rgb(9, 255, 185);
+}
+
+.nav_links .dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    width: 100vw;
+    /* Full width of viewport */
+    height: 55vh;
+    left: -44.25vw;
+    /* Adjusted to center the menu if .nav_links has some width */
+    transform: translateX(44.25vw);
+    /* Fine-tune centering if needed */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 2;
+    list-style: none;
+    padding: 0;
+    overflow-y: auto;
+    text-align: center;
+}
+
+.dropdown-menu li a {
+    color: #000;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-menu li a:hover {
+    text-decoration: underline;
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* Dropdown link hover effect */
+.nav_links>li.dropdown:hover>a {
+    color: rgb(9, 255, 185);
+}
+
+button {
+  padding: 9px 25px;
+  background-color: rgb(31, 6, 255, 1);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+button:hover {
+  background-color: rgb(31, 6, 255, 0.8);
+}
+
+body {
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  flex-flow: column wrap;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  color: rgb(255, 255, 255);
+  border: 2px red solid;
+}
+
+h2 {
+  color: blue;
+}
+
+p {
+  color: black;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+:root {
+  font-size: 20px;
+  --margin-xxs: 0.25rem;
+  --margin-xs: 0.5rem;
+  --margin-s: 0.75rem;
+  --margin-m: 1rem;
+  --margin-l: 1.25rem;
+  --margin-xl: 1.75rem;
+  --margin-xxl: 2.5rem;
+}
+
+/* Header Links Navigation */
+.linksStyle {
+  display: flex;
+  flex-direction: row;
+  border: 2px solid red;
+  width: 25vw;
+  margin: auto;
+  margin-top: 4vh;
+  gap: 1vw;
+  font-size: 1vw;
+  justify-content: center;
+}
+
+/* For Main Page Box to Hold Styling */
+.mainPageBox {
+  display: flex;
+  flex-direction: row;
+  height: 90vh;
+  width: 100%;
+  background-color: black;
+}
+
+.mainLeftBox {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(0, 0, 0);
+  width: 50%;
+}
+
+.mainLeftBox > h3 {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgb(0, 0, 0);
+  width: 50%;
+  margin-top: 10%;
+  margin-left: 15%;
+  font-size: 3vw;
+  color: rgb(255, 255, 255);
+}
+
+.mainRightBox {
+  display: flex;
+  flex-flow: column wrap;
+  background-color: rgb(0, 0, 0);
+  width: 50%;
+}
